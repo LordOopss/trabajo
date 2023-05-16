@@ -43,10 +43,10 @@
 											<header class="major">
 												<h3>¿Cuáles son las áreas geográficas con la mayor cantidad de accidentes?</h3>
 											</header>
-<p>SELECT `Ubicacion_geografica`, `direccion_accidente`, COUNT(*) AS cantidad_accidentes<br>
-FROM `trabajofinal-386914.LordOopsdatos.accidentes`<br>
-GROUP BY `Ubicacion_geografica`, `direccion_accidente`<br>
-ORDER BY cantidad_accidentes DESC</p>
+<pre><code>SELECT `Ubicacion_geografica`, `direccion_accidente`, COUNT(*) AS cantidad_accidentes
+FROM `trabajofinal-386914.LordOopsdatos.accidentes`
+GROUP BY `Ubicacion_geografica`, `direccion_accidente`
+ORDER BY cantidad_accidentes DESC</code></pre>
 <p>Esta consulta permite obtener información sobre los accidentes registrados en una ubicación geográfica específica y su dirección. Se seleccionan las columnas <code>Ubicacion_geografica</code> y <code>direccion_accidente</code> de la tabla <code>accidentes</code>, utilizando la función de agregación <code>COUNT(*)</code> para contar la cantidad de accidentes en cada combinación de ubicación y dirección. Los resultados se agrupan por ubicación y dirección, y se ordenan de forma descendente según la cantidad de accidentes. Esto proporciona información sobre las áreas con mayor incidencia de accidentes y las direcciones específicas donde se han producido.</p>
 										</div>
 									</div>
